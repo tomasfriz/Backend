@@ -1,9 +1,10 @@
 .row{
+    margin: 0%;
     padding: 20px;
 }
 
 div{
-    background-color: #a1b5cd;
+    background-color: darkcyan;
     text-align: center;
 }
 
@@ -30,6 +31,6 @@ div{
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
         left: 35%;
-        top: 570px;
+        top: 950px;
     }
 }

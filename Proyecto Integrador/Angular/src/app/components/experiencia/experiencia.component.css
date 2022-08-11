@@ -1,9 +1,10 @@
 .row{
+    margin: 0%;
     padding: 20px;
 }
 
 div{
-    background-color: #a1b5cb;
+    background-color: darkcyan;
 }
 
 h1, h3{

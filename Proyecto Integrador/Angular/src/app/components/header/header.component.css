@@ -1,5 +1,9 @@
+.row{
+    margin: 0%;
+}
+
 div{
-    background-color: #a1b5cb;
+    background-color: darkslategrey;
 }
 
 app-social{
