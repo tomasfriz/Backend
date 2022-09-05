@@ -11,7 +11,9 @@ describe('HysComponent', () => {
       declarations: [ HysComponent ]
     })
     .compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(HysComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
