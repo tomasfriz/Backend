@@ -5,6 +5,15 @@
  */
 package com.portfolio.TomasAgustinFriz.Security.Entity;
 
+
+
+/**
+ *
+ * @author Tomy
+ */
+
+
+
 import com.portfolio.TomasAgustinFriz.Security.Enums.RolNombre;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -13,11 +22,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
-
-/**
- *
- * @author Tomy
- */
 
 @Entity
 public class Rol {
@@ -29,7 +33,6 @@ public class Rol {
     private RolNombre rolNombre;
     
     //Constructor
-
     public Rol() {
     }
 
@@ -54,6 +57,4 @@ public class Rol {
     public void setRolNombre(RolNombre rolNombre) {
         this.rolNombre = rolNombre;
     }
-    
-    
 }

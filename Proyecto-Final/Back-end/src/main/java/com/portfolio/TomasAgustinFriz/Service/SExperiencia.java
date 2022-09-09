@@ -3,15 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.portfolio.mgb.Service;
+package com.portfolio.TomasAgustinFriz.Service;
 
-import com.portfolio.mgb.Entity.Experiencia;
-import com.portfolio.mgb.Repository.RExperiencia;
+import com.portfolio.TomasAgustinFriz.Entity.Experiencia;
+import com.portfolio.TomasAgustinFriz.Repository.RExperiencia;
 import java.util.List;
 import java.util.Optional;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+/**
+ *
+ * @author Tomy
+ */
 
 @Service
 @Transactional

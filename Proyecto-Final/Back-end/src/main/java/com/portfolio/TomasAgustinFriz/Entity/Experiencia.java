@@ -3,22 +3,39 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.portfolio.mgb.Dto;
+package com.portfolio.TomasAgustinFriz.Entity;
 
-import javax.validation.constraints.NotBlank;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
-public class dtoEducacion {
-    @NotBlank
+@Entity
+public class Experiencia {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
     private String nombreE;
-    @NotBlank
     private String descripcionE;
+    
+    //Constructores
 
-    public dtoEducacion() {
+    public Experiencia() {
     }
 
-    public dtoEducacion(String nombreE, String descripcionE) {
+    public Experiencia(String nombreE, String descripcionE) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
+    }
+    
+    //Getters and setters
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNombreE() {
@@ -36,6 +53,5 @@ public class dtoEducacion {
     public void setDescripcionE(String descripcionE) {
         this.descripcionE = descripcionE;
     }
-    
     
 }

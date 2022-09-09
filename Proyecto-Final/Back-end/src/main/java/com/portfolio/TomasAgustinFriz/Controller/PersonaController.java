@@ -1,7 +1,6 @@
 package com.portfolio.TomasAgustinFriz.Controller;
 
 import com.portfolio.TomasAgustinFriz.Entity.Persona;
-import com.portfolio.TomasAgustinFriz.Interface.IPersonaService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -15,6 +14,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+
+
 /**
  *
  * @author Tomy
@@ -23,7 +24,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
 public class PersonaController {
-    @Autowired IPersonaService ipersonaService;
+    @Autowired com.portfolio.TomasAgustinFriz.Interface.IPersonaService ipersonaService;
     
     @GetMapping("personas/traer")
     public List<Persona> getPersona(){
@@ -46,7 +47,7 @@ public class PersonaController {
     
     @PreAuthorize("hasRole('ADMIN')")
     @PutMapping("/personas/editar/{id}")
-    public Persona editPersona(@PathVariable Long id, 
+    public Persona editPersona(@PathVariable Long id,
                                @RequestParam("nombre") String nuevoNombre,
                                @RequestParam("apellido") String nuevoApellido,
                                @RequestParam("img") String nuevoImg){
@@ -60,8 +61,9 @@ public class PersonaController {
         return persona;
     }
     
-    @GetMapping("/personas/traer/perfil")
+    @GetMapping("personas/traer/perfil")
     public Persona findPersona(){
         return ipersonaService.findPersona((long)1);
     }
+   
 }

@@ -3,15 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.portfolio.mgb.Repository;
+package com.portfolio.TomasAgustinFriz.Repository;
 
-import com.portfolio.mgb.Entity.Educacion;
+import com.portfolio.TomasAgustinFriz.Entity.Experiencia;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface REducacion extends JpaRepository<Educacion, Integer>{
-    public Optional<Educacion> findByNombreE(String nombreE);
+public interface RExperiencia extends JpaRepository<Experiencia, Integer>{
+    public Optional<Experiencia> findByNombreE(String nombreE);
     public boolean existsByNombreE(String nombreE);
 }

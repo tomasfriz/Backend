@@ -12,6 +12,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+
+
 /**
  *
  * @author Tomy
@@ -42,5 +44,4 @@ public class ImpPersonaService implements IPersonaService{
         Persona persona = ipersonaRepository.findById(id).orElse(null);
         return persona;
     }
-    
 }

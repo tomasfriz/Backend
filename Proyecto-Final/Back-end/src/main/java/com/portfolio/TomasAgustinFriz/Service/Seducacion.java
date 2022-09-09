@@ -3,16 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.portfolio.mgb.Service;
+package com.portfolio.TomasAgustinFriz.Service;
 
-import com.portfolio.mgb.Entity.Educacion;
-import com.portfolio.mgb.Repository.REducacion;
+import com.portfolio.TomasAgustinFriz.Entity.Educacion;
+import com.portfolio.TomasAgustinFriz.Repository.REducacion;
 import java.util.List;
 import java.util.Optional;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+/**
+ *
+ * @author Tomy
+ */
 @Service
 @Transactional
 public class Seducacion {
@@ -47,3 +51,4 @@ public class Seducacion {
         return rEducacion.existsByNombreE(nombreE);
     }
 }
+

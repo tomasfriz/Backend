@@ -3,26 +3,27 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.portfolio.mgb.Dto;
+package com.portfolio.TomasAgustinFriz.Dto;
 
 import javax.validation.constraints.NotBlank;
 
-public class dtoExperiencia {
+/**
+ *
+ * @author Tomy
+ */
+public class dtoEducacion {
     @NotBlank
     private String nombreE;
     @NotBlank
     private String descripcionE;
-    
-    //Constructores
 
-    public dtoExperiencia() {
+    public dtoEducacion() {
     }
 
-    public dtoExperiencia(String nombreE, String descripcionE) {
+    public dtoEducacion(String nombreE, String descripcionE) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
     }
-    //Getters & Setters
 
     public String getNombreE() {
         return nombreE;
@@ -39,5 +40,4 @@ public class dtoExperiencia {
     public void setDescripcionE(String descripcionE) {
         this.descripcionE = descripcionE;
     }
-    
 }

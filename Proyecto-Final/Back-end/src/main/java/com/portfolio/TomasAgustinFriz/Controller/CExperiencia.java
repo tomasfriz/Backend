@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.portfolio.mgb.Controller;
+package com.portfolio.TomasAgustinFriz.Controller;
 
-import com.portfolio.mgb.Dto.dtoExperiencia;
-import com.portfolio.mgb.Entity.Experiencia;
-import com.portfolio.mgb.Security.Controller.Mensaje;
-import com.portfolio.mgb.Service.SExperiencia;
+import antlr.StringUtils;
+import com.portfolio.TomasAgustinFriz.Dto.dtoExperiencia;
+import com.portfolio.TomasAgustinFriz.Entity.Experiencia;
+import com.portfolio.TomasAgustinFriz.Security.Controller.Mensaje;
+import com.portfolio.TomasAgustinFriz.Service.SExperiencia;
 import java.util.List;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -24,6 +24,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ *
+ * @author Tomy
+ */
 @RestController
 @RequestMapping("/explab")
 @CrossOrigin(origins = "http://localhost:4200")
@@ -89,3 +93,4 @@ public class CExperiencia {
              
     }
 }
+

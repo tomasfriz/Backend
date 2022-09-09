@@ -26,7 +26,7 @@ public class JwtDto {
         this.authorities = authorities;
     }
     
-    //Getter y Setter
+    //Getters and Setters
 
     public String getToken() {
         return token;
@@ -59,6 +59,5 @@ public class JwtDto {
     public void setAuthorities(Collection<? extends GrantedAuthority> authorities) {
         this.authorities = authorities;
     }
-    
-    
 }
+
