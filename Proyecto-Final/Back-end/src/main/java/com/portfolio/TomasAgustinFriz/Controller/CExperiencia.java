@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.portfolio.TomasAgustinFriz.Controller;
+/*package com.portfolio.TomasAgustinFriz.Controller;
 
 import antlr.StringUtils;
 import com.portfolio.TomasAgustinFriz.Dto.dtoExperiencia;
@@ -24,10 +24,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- *
- * @author Tomy
- */
+
 @RestController
 @RequestMapping("/explab")
 @CrossOrigin(origins = "http://localhost:4200")
@@ -92,5 +89,5 @@ public class CExperiencia {
         return new ResponseEntity(new Mensaje("Experiencia actualizada"), HttpStatus.OK);
              
     }
-}
+}*/
 
