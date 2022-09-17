@@ -17,6 +17,8 @@ public class dtoEducacion {
     @NotBlank
     private String descripcionE;
 
+    //Constructores
+    
     public dtoEducacion() {
     }
 
@@ -25,6 +27,8 @@ public class dtoEducacion {
         this.descripcionE = descripcionE;
     }
 
+    //Getters y Setters
+    
     public String getNombreE() {
         return nombreE;
     }

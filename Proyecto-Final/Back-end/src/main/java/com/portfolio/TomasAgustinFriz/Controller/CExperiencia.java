@@ -3,14 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-/*package com.portfolio.TomasAgustinFriz.Controller;
+package com.portfolio.TomasAgustinFriz.Controller;
 
-import antlr.StringUtils;
+
 import com.portfolio.TomasAgustinFriz.Dto.dtoExperiencia;
 import com.portfolio.TomasAgustinFriz.Entity.Experiencia;
 import com.portfolio.TomasAgustinFriz.Security.Controller.Mensaje;
 import com.portfolio.TomasAgustinFriz.Service.SExperiencia;
 import java.util.List;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -49,10 +50,10 @@ public class CExperiencia {
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> delete(@PathVariable("id") int id) {
         if (!sExperiencia.existsById(id)) {
-            return new ResponseEntity(new Mensaje("no existe"), HttpStatus.NOT_FOUND);
+            return new ResponseEntity(new Mensaje("El ID no existe"), HttpStatus.BAD_REQUEST);
         }
         sExperiencia.delete(id);
-        return new ResponseEntity(new Mensaje("producto eliminado"), HttpStatus.OK);
+        return new ResponseEntity(new Mensaje("Experiencia eliminado"), HttpStatus.OK);
     }
 
     
@@ -89,5 +90,5 @@ public class CExperiencia {
         return new ResponseEntity(new Mensaje("Experiencia actualizada"), HttpStatus.OK);
              
     }
-}*/
+}
 
