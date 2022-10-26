@@ -15,7 +15,7 @@ export class HysComponent implements OnInit {
 
   ngOnInit(): void {
     this.cargarSkills();
-    if (this.tokenService.getToken) {
+    if (this.tokenService.getToken()) {
       this.isLogged = true;
     } else {
       this.isLogged = false;
