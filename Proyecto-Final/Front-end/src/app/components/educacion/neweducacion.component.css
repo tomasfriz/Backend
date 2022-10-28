@@ -1,3 +1,12 @@
+body{
+    background-color: darkcyan;
+}
+
+.container{
+    background-color: darkcyan;
+}
+
 div{
+    background-color: darkcyan;
     padding: 20px;
 }
