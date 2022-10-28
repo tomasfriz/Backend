@@ -11,6 +11,7 @@ import { PersonaService } from 'src/app/service/persona.service';
 })
 export class EditAcercaDeComponent implements OnInit {
   persona: persona = null;
+  imgRef: string = null;
 
   constructor(private activatedRouter: ActivatedRoute, private personaService: PersonaService, private router: Router, public imageService: ImageService) { }
 
@@ -28,7 +29,7 @@ export class EditAcercaDeComponent implements OnInit {
 
   onUpdate(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    this.persona.img = this.imageService.url
+    this.persona.img = this.imgRef
     this.personaService.update(id, this.persona).subscribe(
       data => {
         this.router.navigate(['']);
