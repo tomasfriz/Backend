@@ -29,7 +29,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author Tomy
  */
 @RestController
-@CrossOrigin(origins = "https://frontend-a2e2f.web.app")
+@CrossOrigin(origins = "*")
 @RequestMapping("/skill")
 public class CHys {
 
